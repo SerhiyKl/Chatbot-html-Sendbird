@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<script type="module">
+!function(w, d, s, ...args){
+  var div = d.createElement('div');
+  div.id = 'aichatbot';
+  d.body.appendChild(div);
+  w.chatbotConfig = args;
+  var f = d.getElementsByTagName(s)[0],
+  j = d.createElement(s);
+  j.defer = true;
+  j.type = 'module';
+  j.src = 'https://aichatbot.sendbird.com/index.js';
+  f.parentNode.insertBefore(j, f);
+}(window, document, 'script', '819C627E-8D45-45D5-AB3A-E9BE54C02B98', 'onboarding_bot', {
+  apiHost: 'https://api-cf-eu-1.sendbird.com',
+});
+</script>
+<html>
+  <head>
+    <title>Test page!</title>
+  </head>
+  <body>
+    <h1>Title of the test page</h1>
+    <p>
+      This is an example paragraph. Anything in the <strong>body</strong> tag
+      will appear on the page, just like this <strong>p</strong> tag and its
+      contents.
+    </p>
+  </body>
+</html>
